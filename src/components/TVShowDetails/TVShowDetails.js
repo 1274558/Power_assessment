@@ -6,7 +6,10 @@ import {
 
 const TVshowdetails = ( props ) => {
     return (
-        <div className="ShowDetails">
+        <div className="ShowDetails">        
+            <div className="Imagecontainer">
+                <img src={ props.showimage }  alt="Coverimage" />
+            </div>
             <div className="Detailscontainer">
                 <h2>{props.name}</h2>
                 <p>{props.summary}</p>
@@ -19,10 +22,7 @@ const TVshowdetails = ( props ) => {
                     );
                     })}
                 </nav>
-            </div>            
-            <div className="Imagecontainer">
-                <img src={ props.showimage }  alt="Coverimage" />
-            </div>
+            </div>    
         </div>
     );
 };
