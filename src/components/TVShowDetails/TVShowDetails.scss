@@ -23,7 +23,6 @@
         .Infocontainer {
             display: flex;
             flex-wrap: wrap;
-            width: 400px;
 
             .Additionalinfo {
                 display: flex;
@@ -32,6 +31,12 @@
                 box-shadow: 0 2px 3px #ccc;
                 margin-bottom: 20px;
                 padding: 20px;
+                background-color: aliceblue;
+            }
+
+            .info-text-block{
+                display: inline-block;
+                min-width: 200px;
             }
 
             .Seasonlink {
@@ -93,4 +98,11 @@
             width: 265px;
         }
     }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
