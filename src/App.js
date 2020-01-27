@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 import TVShow from './components/TVShow/TVShow';
 import EpisodeDetails from './components/EpisodeDetails/EpisodeDetails';

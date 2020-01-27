@@ -21,13 +21,16 @@ function EpisodeDetails({ match }) {
     };
 
     return (
-        <div className="Episodecontainer">            
-            <div className="Episodeinfo">
-                <h2>{episodeinformation.name}</h2>
-                <p>{episodeinformation.summary}</p>
-                
-            </div>
-            <div className="Episodeimagecontainer"><img src={ episodeinformation.image.original } alt="Coverimage" /></div>
+        <div className="Episodecontainer container">
+            <div className="row">
+            <div className="Episodeimagecontainer col-xs-4 col-md-5 col-lg-4">
+                <img src={ episodeinformation.image.original } alt="Coverimage" />
+                </div>
+                <div className="Episodeinfo col-xs-8 col-md-7 col-lg-8">
+                    <h2>{episodeinformation.name}</h2>
+                    <p>{episodeinformation.summary}</p>                
+                </div>                
+            </div>            
         </div>
     );
 }

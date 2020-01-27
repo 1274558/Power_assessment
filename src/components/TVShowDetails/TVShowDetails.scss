@@ -1,13 +1,16 @@
 .ShowDetails {
     display: flex;
-    margin-left: 150px;
-    margin-right: 150px;
     margin-top: 30px;
     padding: 20px;
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
-    justify-content: center;
 
+    .Imagecontainer {
+        img {
+            height: 390px;
+            width: 320px;
+        }
+    }
 
     .Detailscontainer {
         display: flex;
@@ -16,34 +19,44 @@
         p {
             font-size: 20px;
         }
-    }
 
-    .Imagecontainer {
-        img {
-            padding-left: 20px;
-        }
-    }
-    
-    .Episodelink {
-        font-size: x-large;
-    
-        ul > li {
-            font-size: large;
-        }
+        .Infocontainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 400px;
+
+            .Additionalinfo {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                border: 1px solid #eee;
+                box-shadow: 0 2px 3px #ccc;
+                margin-bottom: 20px;
+                padding: 20px;
+            }
+
+            .Seasonlink {
+                .Seasonnumber {
+                    cursor: pointer;
+                    text-align: center;
+                    font-size: 100%;
+                    width: 110px;
+                    margin: 10px;
+                    padding: 10px;
+                }
+            }
+        }        
     }
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .ShowDetails {
         display: flex;
-        margin-left: 120px;
-        margin-right: 120px;
         margin-top: 30px;
         padding: 20px;
         border: 1px solid #eee;
         box-shadow: 0 2px 3px #ccc;
-        justify-content: center;
     
     
         .Detailscontainer {
@@ -54,12 +67,6 @@
                 font-size: 20px;
             }
         }
-    
-        .Imagecontainer {
-            img {
-                padding-left: 20px;
-            }
-        }
         
         .Episodelink {
             font-size: x-large;
@@ -67,6 +74,24 @@
             ul > li {
                 font-size: large;
             }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .ShowDetails {
+        .Imagecontainer > img{
+            height: 417px;
+            width: 285px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .ShowDetails {
+        .Imagecontainer > img{
+            height: 390px;
+            width: 265px;
         }
     }
 }

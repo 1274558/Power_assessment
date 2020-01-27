@@ -22,7 +22,8 @@ class TVshow extends Component {
         const showSummary = showdata.summary.replace(regex, '');
         return(
             <div className="TVShowinformation">
-                <TVShowDetails key={ showdata.id } showid={ showdata.id } name={ showdata.name } summary={ showSummary } episodedata={ episodelistdata } showimage={ showdata.image.original }/>
+                <TVShowDetails key={ showdata.id } showid={ showdata.id } name={ showdata.name } showtype={ showdata.type} showgenres={ showdata.genres} summary={ showSummary } 
+                                    showpremiered={ showdata.premiered } showrating={ showdata.rating.average } episodedata={ episodelistdata } showimage={ showdata.image.original }/>
             </div>
         );
     }

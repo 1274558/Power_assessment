@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Power-puff Girls represents a popular TV Show that includes comedy, action and science-fiction. This project is built using React JS and uses Axios as well as fetch() API to receive data from the server. Built in Bootstrap 4, it includes a detailed description of the show and each episode.
+
 ## Available Scripts
 
 In the project directory, you can run:
