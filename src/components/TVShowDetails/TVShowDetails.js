@@ -38,9 +38,10 @@ class TVshowdetails extends Component {
                         <p>{this.props.summary}</p>
                         <div className="Infocontainer">
                             <div className="Additionalinfo">
-                                <div><b>Show type:</b> {this.props.showtype}</div>
-                                <div><b>Genres:</b> {this.props.showgenres[0]}, {this.props.showgenres[1]}, {this.props.showgenres[2]}</div>
-                                <div><b>Premiered:</b> {this.props.showpremiered}</div>
+                                <div><b>Show type: </b> {this.props.showtype}</div>
+                                <div><b>Genres: </b> {this.props.showgenres[0]}, {this.props.showgenres[1]}, {this.props.showgenres[2]}</div>
+                                <div><b>Premiered: </b> {this.props.showpremiered}</div>
+                                <div><b>Rating: </b>{this.props.showrating}</div>
                             </div>
                             { Object.entries(episodesarray).map(([season, seasondata]) => {
                                 return (
